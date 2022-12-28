@@ -1,38 +1,499 @@
-.App {
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.navbar-nav a {
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.navbar-nav a:hover {
+    color: #3498db;
+}
+
+.navbar-nav .active {
+    border-bottom: 1px solid #3498db;
+}
+
+.navbar-brand {
+    color: #3498db !important;
+    font-weight: bold;
+    text-transform: uppercase;
+
+}
+
+.brandname {
+    color: #3498db;
+    text-transform: capitalize;
+}
+
+.btn_get {
+    text-decoration: none;
+    background-color: #3498db;
+    color: white;
+    padding: 15px 35px;
+    border-radius: 45px;
+    font-weight: bolder;
+}
+
+.btn_top {
+    text-decoration: none;
+    border-radius: 45px;
+    letter-spacing: 1px;
+    border: #3498db solid 3px;
+}
+
+
+.btnover a:hover {
+    color: black;
+    font-weight: bold;
+    background-color: aqua;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.animated {
+    border-radius: 45px;
+    margin-top: 100px;
+}
+
+#header {
+    width: 100%;
+    margin-top: 70px;
+    height: 80vh;
+}
+
+.services {
+    color: black;
+    text-align: center;
+}
+
+.section {
+    margin-top: 90px;
+}
+
+.hr_line::before {
+    content: '';
+    background: #3498db;
+    height: 5px;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    transform: translateY(63px);
+}
+.btn {
+    background-color: yellowgreen !important;
+    color: white !important;
+    margin-bottom: 50px;
+}
+
+.btn_send {
+    width: 120px !important;
+}
+
+.card_img {
+    width: 15vw;
+    height: 22vh;
+}
+
+.Card {
+    background: whitesmoke;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    border: 2px solid black;
+
+}
+
+.pro_img {
+    width: 380px;
+    height: 380px;
+    border-radius: 20%;
+    border: 5px solid black;
+    margin-top: 200px;
+    margin-left: 50px;
+}
+
+.list {
+    color: blue;
+}
+
+.des {
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 50px;
+}
+
+.title {
+    margin-top: 150px;
+}
+
+
+
+.conatct_form {
+    display: flex;
+    justify-content: center;
+}
+
+.conatct_form input {
+    border: 2px solid #3498db;
+    border-radius: 5px;
+    text-align: center;
+    width: 280px;
+    height: 30px;
+}
+
+.conatct_form textarea {
+    border-radius: 5px;
+    border: 2px solid #3498db;
+    margin-left: 5px;
+}
+
+.prodimg {
+    width: 10vw;
+    margin-top: 30px;
+    margin-left: 50px;
+}
+
+.inputval {
+    border-radius: 45px;
+    /* text-align: center; */
+    width: 100px;
+}
+
+.carticon {
+    font-size: 25px;
+}
+
+.Addto {
+    display: flex;
+    gap: 20px;
+
+}
+
+.Addto button {
+    color: yellowgreen;
+    background-color: #3498db;
+    text-align: center;
+    font-size: 15px;
+    height: 25px;
+    width: 25px;
+    border: none;
+}
+
+.adi {
+    color: blueviolet;
+    font-size: 25px;
+}
+
+.starr {
+    color: tomato;
+    margin-right: 50px;
+}
+.searchmenu{
+  border-radius: 50px;
   text-align: center;
+  
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+/* product page */
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.products {
+  margin-top: -110px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: auto;
+}
+.our{
+    margin-top: 100px;
+    text-align: center;
+    color: #345e82;
+    text-transform: uppercase;
+}
+  #card{
+    background:rgb(245, 245, 245,0.7);
+    width:300px;
+    height: 200px;
+    box-shadow: 4px 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius:20px;
+    transition:0.3s;
+    margin-top: 160px;
+    margin-left: 70px;
+  }
+  
+  #card:hover {
+    transition:0.3s;
+    box-shadow: 8px 8px 16px 0 rgba(0,0,0,0.2),-8px -8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  #card img{
+    object-fit:cover;
+    animation:fadeIn 1s;
+    height: 100%;
+    width:100%;
+    border-radius:20px 20px 0px 0px;
+    transition:0.3s;
+  }
+  
+  #content{
+    padding:2vh 1vw 2vh 2vw; 
+    font-size:1.3rem;
+    font-family:Arial;
+    color:#345e82;
+  }
+  
+  
+  #content ol{
+    padding:2vh 1vw 3vh 3vw;
+    font-size:1rem;
+    color:black;
+    font-weight:700;
+    /* transition:0.3s; */
+  }
+  #content ol li{
+    display:block;
+    transition:0.3s;
+    list-style-type:123;
+    width:auto;
+  }
+  
+  #content ol li:hover{
+    display:block;
+    color:#345e82;
+    padding-left:2vh;
+    cursor:pointer;
+    
+  }
+  
+  #price{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  }
+  
+  #price button{
+    margin:2vw 1vw 2vw 0vh;
+    height:40px;
+    width:80px;
+    font-size:2.8vh;
+    font-family:Arial;
+    font-weight:Regular;
+    background-color:#345e82;
+    border:none;
+    outline:none;
+    color:white;
+    border-radius:10px;
+    transition:0.3s
+  }
+  
+  #price button:active{
+    background-color:white;
+    color:#345e82
+  }
+  
+  #price button:hover{
+    transition:0.3s;
+    margin-left:2vw;
+    margin-right:2vw;
+    transform:scale(1.3);
+    cursor:pointer
+  }
+
+
+
+  /*  contact page csss */
+
+.contact-form-container {
+  background: #F4F3F3;
+  font-family: "Lato", sans-serif;
+}
+
+.contact-us {
+  position: relative;
+  width: 250px;
+  background: #C3E0EC;
+  overflow: hidden;
+}
+.contact-us:before {
+  position: absolute;
+  content: "";
+  bottom: -50px;
+  left: -100px;
+  height: 250px;
+  width: 400px;
+  background: #F8B7D8;
+  transform: rotate(25deg);
+}
+.contact-us:after {
+  position: absolute;
+  content: "";
+  bottom: -80px;
+  right: -100px;
+  height: 270px;
+  width: 400px;
+  background: #9ED8EB;
+  transform: rotate(-25deg);
+}
+
+.contact-header {
   color: white;
+  position: absolute;
+  transform: rotate(-90deg);
+  top: 120px;
+  left: -40px;
+}
+.contact-header h1 {
+  font-size: 1.5rem;
 }
 
-.App-link {
-  color: #61dafb;
+.social-bar {
+  position: absolute;
+  bottom: 20px;
+  left: 75px;
+  z-index: 1;
+  width: 100px;
+}
+.social-bar ul {
+  list-style-type: none;
+}
+.social-bar ul li {
+  display: inline-block;
+  color: white;
+  width: 25px;
+  height: 25px;
+  line-height: 25px;
+  text-align: center;
+  margin-right: -4px;
+  font-size: 1.2rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.header {
+  text-align: center;
+  padding: 20px 0;
+  color: #444;
+}
+.header h1 {
+  font-weight: normal;
+}
+.header h2 {
+  margin-top: 10px;
+  font-weight: 300;
+}
+
+.address, .email, .phone {
+  text-align: center;
+  padding: 20px 0;
+  color: #444;
+}
+.address h3, .email h3, .phone h3 {
+  font-size: 1rem;
+  font-weight: 300;
+}
+.address i, .email i, .phone i {
+  color: #F8B7D8;
+  font-size: 1.7rem;
+  margin-bottom: 20px;
+}
+
+form {
+  position: relative;
+  width: 440px;
+  margin: 0 auto;
+  padding: 20px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  background: white;
+}
+form input, form textarea {
+  background: white;
+  display: block;
+  margin: 20px auto;
+  width: 100%;
+  border: 0;
+}
+form input {
+  height: 40px;
+  line-height: 40px;
+  outline: 0;
+  border-bottom: 1px solid rgba(68, 68, 68, 0.3);
+  font-size: 1rem;
+  color: rgba(68, 68, 68, 0.8);
+}
+form textarea {
+  border-bottom: 1px solid rgba(68, 68, 68, 0.3);
+  resize: none;
+  outline: none;
+  font-size: 1rem;
+  font-family: lato;
+  color: rgba(68, 68, 68, 0.8);
+}
+form button {
+  position: absolute;
+  display: block;
+  height: 40px;
+  width: 250px;
+  left: 95px;
+  border: 0;
+  border-radius: 20px;
+  bottom: -20px;
+  background: #9ED8EB;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 300;
+  outline: none;
+}
+
+.contact-form {
+  padding-bottom: 40px;
+}
+
+/* Layout Stuff */
+body {
+  background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/38816/image-from-rawpixel-id-2042508-jpeg.jpg");
+  position: relative;
+  background-size: cover;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+
+.contact-form-container {
+  width: 800px;
+  display: grid;
+  margin-top: 100px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.5fr 0.5fr 2fr;
+  grid-template-areas: "contact-us header header header" "contact-us address phone email" "contact-us contact-form contact-form contact-form";
+}
+
+.contact-us {
+  grid-area: contact-us;
+}
+
+.header {
+  grid-area: header;
+}
+
+.address {
+  grid-area: address;
+}
+
+.phone {
+  grid-area: phone;
+}
+
+.email {
+  grid-area: email;
+}
+
+.contact-form {
+  grid-area: contact-form;
 }
